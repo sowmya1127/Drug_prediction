@@ -19,5 +19,5 @@ def predict():
     return render_template('index.html', prediction_text='The preferable drug would be ${}'.format(prediction))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
