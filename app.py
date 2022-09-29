@@ -16,7 +16,7 @@ def predict():
     prediction=model.predict(final_features)
     
    
-    return render_template('index.html', prediction_text='The preferable drug would be ${}'.format(prediction))
+    return render_template('Prediction.html', prediction_text='The preferable drug would be ${}'.format(prediction))
 
 if __name__ == '__main__':
     app.run(debug=True)
